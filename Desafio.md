@@ -110,7 +110,7 @@ Serão considerados como bônus:
 
 ## **Avaliação**
 
-Indenpendente da tecnologia utilizada, a avaliação será centrada na sua capacidade de arquitetura de software, seguindo boas práticas de programação orientada a objetos.
+Independente da tecnologia utilizada, a avaliação será centrada na sua capacidade de organização e arquitetura de software, seguindo boas práticas de programação orientada a objetos, com a utilização de design patterns.
 
 Dica: Clean Code
 
@@ -118,6 +118,6 @@ Dica: Clean Code
 
 Você deverá fazer um fork desse repositório e enviar um pull request com a sua solução.
 
-## **Prazo**
+## **Observações Finais e Prazo**
 
-O desafio deverá ser entregue até 5 de Maio de 2019 (05/05/2019).
+O desafio deverá ser entregue em até 5 dias após o recebimento.
