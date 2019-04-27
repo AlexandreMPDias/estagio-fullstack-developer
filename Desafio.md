@@ -4,15 +4,13 @@
 
 Na Liber recebemos diversos pedidos de aula das mais variadas disciplinas diariamente. Sua tarefa será implementar uma versão simplificada de um sistema de agendamento de aulas para os nossos alunos.
 
-## **Detalhamento da Tarefa**
-
 ## Backend/API
 
 Para o backend você deverá implementar uma API RESTful com as seguintes características:
 
-### **Rota para cadastro de um usuário com email e senha**
+### **Rota para cadastro de um usuário com nome, email e senha**
 
-### POST /api/cadastro
+#### POST /api/cadastro
 
 | Argumento | Descrição                                 | Tipo   |
 | --------- | ----------------------------------------- | ------ |
@@ -22,18 +20,18 @@ Para o backend você deverá implementar uma API RESTful com as seguintes caract
 
 ### **Rota para login de um usuário com email e senha**
 
-### POST /api/login
+#### POST /api/login
 
 | Argumento | Descrição                                 | Tipo   |
 | --------- | ----------------------------------------- | ------ |
 | email     | Email do usuário                          | string |
 | senha     | Senha do usuário com no máximo 10 digitos | string |
 
-### OBS: O login deverá ser stateless (via token com tempo de expiração determinado e de sua escolha) - dica: Utilize JWT
+**OBS:** O login deverá ser stateless (via token com tempo de expiração determinado e de sua escolha) - dica: Utilize JWT
 
 ### **Rota para armazenar um pedido de aula do usuário** (requer autenticação)
 
-### POST /api/requests
+#### POST /api/requests
 
 | Argumento   | Descrição                                             | Tipo       |
 | ----------- | ----------------------------------------------------- | ---------- |
@@ -44,7 +42,7 @@ Para o backend você deverá implementar uma API RESTful com as seguintes caract
 
 ### **Rota para ver os pedidos de aula do usuário** (requer autenticação)
 
-### GET /api/requests
+#### GET /api/requests
 
 | Parâmetros  | Descrição                                       |
 | ----------- | ----------------------------------------------- |
@@ -56,7 +54,7 @@ Para o backend você deverá implementar uma API RESTful com as seguintes caract
 
 ### **Rota para ver um pedido de aula do usuário** (requer autenticação)
 
-### GET /api/requests/{request_id}
+#### GET /api/requests/{request_id}
 
 | Parâmetros  | Descrição                                       |
 | ----------- | ----------------------------------------------- |
@@ -76,7 +74,7 @@ Para o backend você deverá implementar uma API RESTful com as seguintes caract
 
 Para o frontend você deverá implementar as seguintes interfaces:
 
-- Uma tela para **cadastro** do usuário com email e senha
+- Uma tela para **cadastro** do usuário com nome, email e senha
   - Caso já exista um usuário com o email enviado, uma mensagem de erro deve ser mostrada
 
 - Uma tela para **login** do usuário com email e senha
